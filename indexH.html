@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Aportando Index</title>
+	 <!--Import Google Icon Font-->
+	   <link href="css/fuente.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="icon" type="image/png" href="imagenes/logo.png" />
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<header>
+      
+				<div class="navbar-fixed">
+					<nav>
+						<div class="nav-wrapper green lighten-2 ">
+							<a href="indexH.html" class="brand-logo right">
+							<img class="responsive-img" src="imagenes/logo2.jpg" >	
+							</a>
+
+							<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+							<ul id="nav-mobile" class="Left hide-on-med-and-down">
+
+								<li><a href="indexH.html">Inicio
+									<i class="material-icons left">home</i>
+
+								</a></li>
+
+								<li><a href="#informacion" class="scale-transition">Comentar
+									<i class="material-icons left">import_contacts</i>
+								</a></li>
+
+
+								<li><a href="paginas/contactanos.html">Contáctanos
+									<i class="material-icons left">insert_comment</i>
+								</a></li>
+
+								<li>
+									<a class="dropdown-button" href="#!" data-activates="menu1">
+								   Más Opciones<i class="material-icons right">arrow_drop_down</i>
+									</a>
+								</li>
+							</ul>
+
+							<ul class="dropdown-content" id="menu1">
+								<li><a type="_target" href=" http://www.aprendeaprogramar.com/">Aprender a Programar</a></li>
+								<li><a href="http://materializecss.com">Materialize CSS</a></li>
+								
+							
+							</ul>
+
+
+							<ul class="side-nav" id="mobile-demo">
+						        <li><a href="index.html">Home
+									<i class="material-icons left">home</i>
+
+								</a></li>
+
+								<li><a href="#informacion" class="scale-transition">About us
+									<i class="material-icons left">import_contacts</i>
+								</a></li>
+
+
+								<li><a href="paginas/contactanos.html">Contact us
+									<i class="material-icons left">insert_comment</i>
+								</a></li>
+
+								
+
+
+						     </ul>
+
+						</div>
+					</nav>
+				</div>
+				</header>
+				<script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+
+		<script type="text/javascript">
+        	$(document).ready(function(){
+        		$('.dropdown-button').dropdown({hover:true});//Funcion para activar el menu desplegable
+        		$(".button-collapse").sideNav();//funcion para activar el menu hamburguesa cuando la pantalla sea pequeña
+        		$('.slider').slider({//funcion para activar el menu de imagnes slider
+        			interval:3000});
+        	});
+        </script>
+</body>
+</html>
