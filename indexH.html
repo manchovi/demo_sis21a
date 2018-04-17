@@ -15,17 +15,17 @@
 </head>
 <body>
 <header>
-      
-				<div class="navbar-fixed">
-					<nav>
-						<div class="nav-wrapper green lighten-2 ">
-							<a href="indexH.html" class="brand-logo right">
-							<img class="responsive-img" src="imagenes/logo2.jpg" >	
+  <nav class="#81c784 green lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+
+     <a href="indexH.html" class="brand-logo right">
+	<img class="responsive-img" src="imagenes/logo2.jpg" >	
 							</a>
-
-							<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
-							<ul id="nav-mobile" class="Left hide-on-med-and-down">
+					 <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Inicio</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="Left hide-on-med-and-down">
 
 								<li><a href="indexH.html">Inicio
 									<i class="material-icons left">home</i>
@@ -55,30 +55,25 @@
 							
 							</ul>
 
-
-							<ul class="side-nav" id="mobile-demo">
-						        <li><a href="index.html">Home
-									<i class="material-icons left">home</i>
-
-								</a></li>
-
-								<li><a href="#informacion" class="scale-transition">About us
-									<i class="material-icons left">import_contacts</i>
-								</a></li>
-
-
-								<li><a href="paginas/contactanos.html">Contact us
-									<i class="material-icons left">insert_comment</i>
-								</a></li>
-
-								
-
-
-						     </ul>
-
-						</div>
-					</nav>
-				</div>
+      
+    </div>
+  </nav>
+   <div class="slider" style="height:450px ;">
+			  <ul class="slides">
+			    <li>
+			      <img src="imagenes/java.jpg"> 
+			      
+			    </li>
+			    <li>
+			      <img src="imagenes/omg.jpg"> 
+			      
+			    </li>
+			    <li>
+			      <img src="imagenes/binary.jpg"> 
+			     
+			    </li>
+			  </ul>
+			</div>		
 				</header>
 				  	<div class="container">
 			         <div class="row"><!--Abrimos la capa que contendra las columnas-->
@@ -140,8 +135,13 @@
             </div>
           </div>
         </footer>
-				<script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/materialize.min.js"></script>
+				  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/materialize.min.js"></script>
+   <script src="js/init.js"></script>
+
 
 		<script type="text/javascript">
         	$(document).ready(function(){
