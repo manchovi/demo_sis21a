@@ -9,12 +9,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" type="image/png" href="imagenes/ImagenesCarlosDaniel/icono.png" />
 </head>
 <body>
   <nav class=" blue-grey" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="imagenes/ImagenesCarlosDaniel/logo.png"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="PaginaCarlosDanielMelchor.html" class="brand-logo"><img src="imagenes/ImagenesCarlosDaniel/logo.png"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="PaginaCarlosDanielMelchor.html">Inicio</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -118,40 +119,57 @@
 						  <br><br>
 						  <h4 class="center grey darken-3-text">Mario Kart 64</h4><br>
 						  <img class="materialboxed" width="100%" src="imagenes/ImagenesCarlosDaniel/mario.jpg">
+
+
+
+						  	<br><br><br>
+						  			<h1>FeatureDiscovery</h1>
+						  		<br>
+						  <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">Abrir</a>
+
+
+
+						  <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('close')">Cerrar</a>
+						  <br><br>
 		</div>
+
+		
+
+		<!-- Element Showed -->
+			  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a>
+        </div>
+
+        <div class="tap-target cyan" data-target="menu">
+          <div class="tap-target-content white-text">
+            <h5>Hola!</h5>
+            <p class="white-text">Gracias por visitarnos.</p>
+          </div>
+        </div>
+
 
   <footer class="page-footer  blue-grey darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">BetaCompany</h5>
+          <p class="grey-text text-lighten-4">Pagina desarrollada usando el framework Material Design.</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+        
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="orange-text text-lighten-3" href="www.materializecss.com">Material Design</a></li>
+            
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="blue-text text-lighten-1">Beta Company</a>
       </div>
     </div>
   </footer>
@@ -172,6 +190,10 @@
 
   	$(document).ready(function(){
     $('.materialboxed').materialbox();
+  });
+
+  	$(document).ready(function(){
+    $('.tap-target').tapTarget();
   });
 
     </script>
