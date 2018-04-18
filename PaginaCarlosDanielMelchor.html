@@ -89,7 +89,27 @@
 					        </div>
 					      </div>
 					    </div>
-					  </div>	
+					  </div>
+
+					  	<br><br>
+					  	<h1>Pestañas</h1>
+					  	<br>
+					    <div class="row">
+						    <div class="col s12">
+						      <ul class="tabs">
+						        <li class="tab col s4"><a class="active" href="#test1">GemeBoy</a></li>
+						        <li class="tab col s4"><a href="#test2">Nintendo 64</a></li>
+						        <li class="tab col s4"><a href="#test3">PlayStation 1</a></li>
+
+						      </ul>
+						    </div>
+						    <div id="test1" class="col s12">Game Boy (Japonés: ゲームボーイ "Gēmu Bōi") es una serie de videoconsolas portátiles alimentadas con pilas (a excepción del modelo SP y Micro) y comercializadas por Nintendo. La Gameboy es oficialmente la tercera consola más vendida del mundo. Comenzó como un modelo de consola parcialmente experimental, y en su primer año vendió relativamente poco (la Mega Drive de SEGA, por ejemplo, vendió 2 millones de consolas en su primer año en el mercado), alrededor de los 4 millones de unidades en todo el mundo. Sin embargo, con la llegada del fenómeno Tetris y el gran apoyo de los licenciatarios que trabajaban para NES y Super Nintendo (Capcom, Konami, Enix/Quintet, Namco, Culture Brain, Jaleco, Interplay, Ocean, Square...) las ventas se dispararon.</div>
+						    <div id="test2" class="col s12">El Nintendo 64 es la cuarta videoconsola de sobremesa producida por Nintendo, desarrollada para suceder a la Super Nintendo y para competir con el Saturn de Sega y la PlayStation de Sony.
+
+							Incorpora en su arquitectura un procesador principal de 64 bits. El soporte de almacenamiento de los juegos es en forma de cartuchos, la mayoría de ellos con memoria interna. El uso de este tipo de almacenamiento le supuso una seria desventaja comercial frente a sus competidores, ya que encarecía los costes de producción lo que aumentaba el precio final, y además, era de una capacidad de almacenamiento menor al de un CD-ROM.</div>
+						    <div id="test3" class="col s12">PlayStation (プレイステーション Pureisutēshon, oficialmente abreviada como PS1) es una videoconsola de sobremesa de 32 bits lanzada por Sony Computer Entertainment el 3 de diciembre de 1994 en Japón. Se considera la videoconsola más exitosa de la quinta generación tanto en ventas como en popularidad. Además de la original se lanzó la PSone. Tuvo gran éxito al implantar el CD-ROM dentro de su hardware a pesar de que otras compañías como SEGA (Sega CD), Panasonic (3DO), Phillips (CD-i), SNK (Neo Geo CD), NEC (Super CD ROM) y Atari (Atari Jaguar) ya lo habían empleado.</div>
+
+						  </div>	
 		</div>
 
   <footer class="page-footer  blue-grey darken-3">
@@ -135,7 +155,14 @@
   <script src="js/init.js"></script>
   <script type="text/javascript">
   $('.slider').slider({//funcion para activar el menu de imagnes slider
-        			interval:3000});</script>
+        			interval:3000});
+
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  })
+
+
+    </script>
 
   </body>
 </html>
